@@ -1,0 +1,19 @@
+{
+  "name": "uitc",
+  "version": "1.0.0",
+  "description": "UI Test Common ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avia-sb/uitc.git"
+  },
+  "author": "Avia Godis etc..",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avia-sb/uitc/issues"
+  },
+  "homepage": "https://github.com/avia-sb/uitc#readme"
+}
