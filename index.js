@@ -6,7 +6,7 @@
 //   }
 
 
-import Auth from './Utils/Auth'
+import { Auth } from './Utils/Auth'
 
 class UITC{
     auth = Auth
