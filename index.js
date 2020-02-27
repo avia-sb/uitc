@@ -6,7 +6,7 @@
 //   }
 
 
-import { Auth } from './Utils/Auth'
+var Auth = require('./Utils/Auth');
 
 class UITC{
     auth = Auth

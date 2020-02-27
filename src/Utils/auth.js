@@ -1,4 +1,4 @@
-export class Auth{
+class Auth{
 
     UIlogin(username, password, url){
         cy.visit(url)
@@ -107,3 +107,5 @@ export class Auth{
     //   });
 
 }
+
+module.exports = Auth

@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/avia-sb/uitc/issues"
   },
-  "homepage": "https://github.com/avia-sb/uitc#readme"
+  "homepage": "https://github.com/avia-sb/uitc#readme",
+  "browserify": {
+    "transform": [["babelify", { "presets": ["@babel/preset-env"] }]]
+  }
 }
