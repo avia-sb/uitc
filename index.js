@@ -1,4 +1,4 @@
-exports function login(username, password, url){
+exports.login = function(username, password, url){
       cy.visit(url)
       cy.get('#username').type(username)
       cy.get('#password').type(password)
