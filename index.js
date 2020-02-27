@@ -6,7 +6,7 @@
 //   }
 
 
-var Auth = require('./Utils/Auth');
+var Auth = require('./src/Utils/auth.js');
 
 class UITC{
     constructor(){
