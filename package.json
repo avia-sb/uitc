@@ -17,6 +17,18 @@
   },
   "homepage": "https://github.com/avia-sb/uitc#readme",
   "browserify": {
-    "transform": [["babelify", { "presets": ["@babel/preset-env"] }]]
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "@babel/preset-env"
+          ]
+        }
+      ]
+    ]
+  },
+  "dependencies": {
+    "babelify": "^10.0.0"
   }
 }
