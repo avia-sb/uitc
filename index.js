@@ -12,5 +12,5 @@ class UITC{
     auth = Auth
 };
 
-export { UITC }
+module.export.UITC 
 
