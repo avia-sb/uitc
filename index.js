@@ -9,7 +9,9 @@
 var Auth = require('./Utils/Auth');
 
 class UITC{
-    auth = Auth
+    constructor(){
+        this.auth = Auth
+    }
 };
 
 module.exports = UITC 
