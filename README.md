@@ -15,5 +15,5 @@ if the installation went without any errors you can just import uitc to your pro
  2. createUUID()
  
  # Example
- `import { Auth } from 'uitc'`
+ `import { Auth } from 'uitc'`\n
  `Auth.UIlogin('admin', '1qaz@WSX', 'localhost:9000')`
