@@ -1,41 +1,41 @@
-class Auth{
+function UIlogin(username, password, url){
+    cy.visit(url)
+    cy.get('#username').type(username)
+    cy.get('#password').type(password)
+    cy.get('[name="login"]').click()
+}
 
-    UIlogin(username, password, url){
-        cy.visit(url)
-        cy.get('#username').type(username)
-        cy.get('#password').type(password)
-        cy.get('[name="login"]').click()
+function submitLoginForm(response){
+    const isAlreadyLoggedIn = cy.find("#kc-form-login").length > 0;
+    if (isAlreadyLoggedIn) {
+        return;
     }
-
-    submitLoginForm(response){
-        const isAlreadyLoggedIn = cy.find("#kc-form-login").length > 0;
-        if (isAlreadyLoggedIn) {
-          return;
-        }
-        return cy.request({
-          form: true,
-          method: "POST",
-          url: loginForm[0].action,
-          followRedirect: false,
-          body: {
-            username: Cypress.env("keycloak_user"),
-            password: Cypress.env("keycloak_password"),
-          },
-        });
-      };
+    return cy.request({
+        form: true,
+        method: "POST",
+        url: loginForm[0].action,
+        followRedirect: false,
+        body: {
+        username: Cypress.env("keycloak_user"),
+        password: Cypress.env("keycloak_password"),
+        },
+    });
+};
       
-    createUUID(){
-        var s = [];
-        var hexDigits = "0123456789abcdef";
-        for (var i = 0; i < 36; i++) {
-          s[i] = hexDigits.substr(Math.floor(Math.random() * 0x10), 1);
-        }
-        s[14] = "4";
-        s[19] = hexDigits.substr((s[19] & 0x3) | 0x8, 1);
-        s[8] = s[13] = s[18] = s[23] = "-";
-        var uuid = s.join("");
-        return uuid;
-      };
+function createUUID(){
+    var s = [];
+    var hexDigits = "0123456789abcdef";
+    for (var i = 0; i < 36; i++) {
+        s[i] = hexDigits.substr(Math.floor(Math.random() * 0x10), 1);
+    }
+    s[14] = "4";
+    s[19] = hexDigits.substr((s[19] & 0x3) | 0x8, 1);
+    s[8] = s[13] = s[18] = s[23] = "-";
+    var uuid = s.join("");
+    return uuid;
+};
+
+export { UIlogin, submitLoginForm, createUUID }
       
     //   Cypress.Commands.add("login", (url) => {
     //     return cy.get("@isLoggedIn").then((isLoggedIn) => {
@@ -105,7 +105,3 @@ class Auth{
     //     cy.wrap(false).as("isLoggedIn");
     //     cy.wrap(false).as("isServerEnabled");
     //   });
-
-}
-
-module.exports = Auth
