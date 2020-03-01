@@ -15,9 +15,5 @@
   "bugs": {
     "url": "https://github.com/avia-sb/uitc/issues"
   },
-  "homepage": "https://github.com/avia-sb/uitc#readme",
-
-  "devDependencies": {
-    "@cypress/browserify-preprocessor": "^2.1.4"
-  }
+  "homepage": "https://github.com/avia-sb/uitc#readme"
 }
