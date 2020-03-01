@@ -8,4 +8,12 @@ UI Test Common
 
 
 if the installation went without any errors you can just import uitc to your project
-`import * as UITC from 'uitc'`
+`import { Auth } from 'uitc'`
+
+# Functionalities
+ 1. UIlogin(username, password, url)
+ 2. createUUID()
+ 
+ # Example
+ ```import { Auth } from 'uitc'
+    Auth.UIlogin('admin', '1qaz@WSX', 'localhost:9000')```
