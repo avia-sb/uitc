@@ -22,22 +22,22 @@ if the installation went without any errors you can just import uitc to your pro
 
 # Troubleshooting
 1. if you're getting 'import export' error do as follows:
-   Install browserify: `npm install -g browserify`
-   Install babel: `npm install --save-dev browserify babelify babel-preset-es2015 babel-preset-stage-0 babel-preset-env`
-   Install babel/core: `npm install @babel/core --save`
-   Add these lines at the end of package.json:
-```
-,
-  "browserify": {
-    "transform": [
-      [
-        "babelify",
-        {
-          "presets": [
-            "@babel/preset-env"
-          ]
-        }
-      ]
-    ]
-  }
-  ```
+   * Install browserify: `npm install -g browserify`
+   * Install babel: `npm install --save-dev browserify babelify babel-preset-es2015 babel-preset-stage-0 babel-preset-env`
+   * Install babel/core: `npm install @babel/core --save`
+   * Add these lines at the end of package.json:
+       ```
+       ,
+         "browserify": {
+           "transform": [
+             [
+               "babelify",
+               {
+                 "presets": [
+                   "@babel/preset-env"
+                 ]
+               }
+             ]
+           ]
+         }
+         ```
