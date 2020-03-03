@@ -39,4 +39,3 @@ if the installation went without any errors you can just import uitc to your pro
              ]
            ]
          }
-         ```
