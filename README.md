@@ -1,4 +1,4 @@
-# uitc
+# UITC
 UI Test Common 
 
 # Installation
