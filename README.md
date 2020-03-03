@@ -27,7 +27,6 @@ if the installation went without any errors you can just import uitc to your pro
    * Install babel/core: `npm install @babel/core --save`
    * Add these lines at the end of package.json:
        ```
-       ,
          "browserify": {
            "transform": [
              [
