@@ -1,3 +1,3 @@
-import * as Auth from './Utils/auth'
+import * as Auth from './src/Utils/auth'
 
 export { Auth }

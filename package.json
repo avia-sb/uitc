@@ -24,7 +24,9 @@
     "browserify": "^16.5.0"
   },
   "dependencies": {
-    "@babel/core": "^7.8.6"
+    "@babel/core": "^7.8.6",
+    "@types/assert": "^1.4.6",
+    "axios": "^0.19.2"
   },
   "browserify": {
     "transform": [
